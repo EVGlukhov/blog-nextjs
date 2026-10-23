@@ -14,7 +14,7 @@ export default async function PostsList() {
 
   return (
     <ul className="space-y-3">
-      {posts.slice(0, 5).map((post) => (
+      {posts.map((post) => (
         <li key={post.id}>
           <PostListItem post={post} />
         </li>
